@@ -14,12 +14,11 @@ on:
         description: "Title"
         required: true
         type: string
-        default: ""
       metaType:
         description: "MetaType"
         required: true
         type: choice
-        default: stable
+        default: markdown
         options:
           - markdown
           - mp3

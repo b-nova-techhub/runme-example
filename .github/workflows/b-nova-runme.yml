@@ -35,7 +35,7 @@ jobs:
   createTechHubEntry:
     runs-on: ubuntu-latest
     env:
-      REPOSITORY:
+      REPOSITORY: b-nova-techhub
     steps:
       - name: Print inputs
         run: |

@@ -1,0 +1,42 @@
+name: b-nova Example
+on:
+  workflow_dispatch:
+    inputs:
+      techHubType:
+        description: "TechHub Type"
+        required: true
+        type: choice
+        default: "techup"
+        options:
+          - techup
+          - decodify
+      title:
+        description: "Title"
+        required: true
+        type: string
+        default: ""
+      metaType:
+        description: "MetaType"
+        required: true
+        type: choice
+        default: stable
+        options:
+          - markdown
+          - mp3
+      publish:
+        description: "Publish it?"
+        required: true
+        type: choice
+        default: "yes"
+        options:
+          - "yes"
+          - "no"
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      REPOSITORY: runme
+    steps:
+      - name: Print inputs
+        run: |
+          echo "${{ toJSON(github.event.inputs) }}"

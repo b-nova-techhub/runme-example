@@ -32,10 +32,10 @@ on:
           - "yes"
           - "no"
 jobs:
-  release:
+  createTechHubEntry:
     runs-on: ubuntu-latest
     env:
-      REPOSITORY: runme
+      REPOSITORY:
     steps:
       - name: Print inputs
         run: |

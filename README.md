@@ -78,3 +78,9 @@ echo $URL
 ```sh {"id":"01HW8AWWVX7P360777V58523M6"}
 ping -c 5 $__
 ```
+
+## GitHub Action
+
+```sh {"id":"01HW8CHV3KK1QFDTWWR8E44BNP"}
+https://github.com/b-nova-techhub/runme-example/blob/main/.github/workflows/b-nova-runme.yml
+```
